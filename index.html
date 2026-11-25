@@ -88,7 +88,7 @@
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[400px] bg-primary/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
                 <div class="max-w-4xl mx-auto text-center relative z-10">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Sistem Vector & Metadata Aktif
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Sistem Vector, Metadata & Motion Aktif
                     </div>
                     <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                         Ekosistem AI Terbaik untuk <br class="hidden md:block"/> 
@@ -97,10 +97,12 @@
                 </div>
             </section>
 
-            <!-- Tools Section -->
+            <!-- Tools Section (3 Pilihan Tools) -->
             <section id="tools" class="py-16 px-6 bg-darker/50 border-t border-white/5 relative">
-                <div class="max-w-4xl mx-auto">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        
+                        <!-- TOOL 1: Vectoria Vector Maker -->
                         <div class="tool-card rounded-2xl p-8 relative flex flex-col h-full group">
                             <div class="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">PRO</div>
                             <div class="w-16 h-16 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
@@ -110,9 +112,11 @@
                             <p class="text-gray-400 text-sm mb-8 flex-grow leading-relaxed">Ubah ide dan prompt jadi aset vector siap upload.</p>
                             <div class="pt-5 border-t border-white/5 flex items-center justify-between">
                                 <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-circle-check text-green-500 mr-1"></i> Sistem Ready</span>
-                                <a href="https://share.gemini.google/1e4SnAxsMMWo" class="bg-primary/10 text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="#" class="bg-primary/10 text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
+
+                        <!-- TOOL 2: Metadata Optimization -->
                         <div class="tool-card rounded-2xl p-8 relative flex flex-col h-full group">
                             <div class="absolute top-4 right-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">SEO</div>
                             <div class="w-16 h-16 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
@@ -122,9 +126,43 @@
                             <p class="text-gray-400 text-sm mb-8 flex-grow leading-relaxed">Otomatisasi pembuatan Title, Description, dan keyword komersial.</p>
                             <div class="pt-5 border-t border-white/5 flex items-center justify-between">
                                 <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-circle-check text-green-500 mr-1"></i> Sistem Ready</span>
-                                <a href="https://share.gemini.google/E5ZyRmOg6Yn2" class="bg-purple-500/10 text-purple-400 hover:bg-purple-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="#" class="bg-purple-500/10 text-purple-400 hover:bg-purple-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
+
+                        <!-- TOOL 3: Motion Studio Maker -->
+                        <div class="tool-card rounded-2xl p-8 relative flex flex-col h-full group">
+                            <div class="absolute top-4 right-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">MOTION</div>
+                            <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-film"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Motion Studio Maker</h3>
+                            <p class="text-gray-400 text-sm mb-5 leading-relaxed">Buat aset animasi motion green screen HTML Canvas 1920x1080 loop 10 detik siap pakai.</p>
+                            
+                            <!-- Kotak Prompt Preset HTML + Link File -->
+                            <div class="bg-dark/80 border border-white/10 rounded-xl p-3.5 mb-6 flex-grow flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
+                                            <i class="fa-solid fa-terminal mr-1"></i> Prompt Preset HTML
+                                        </span>
+                                        <button type="button" id="copyPromptBtn" class="text-[11px] bg-white/5 hover:bg-emerald-500/20 text-gray-300 hover:text-emerald-300 px-2.5 py-1 rounded-md transition-all flex items-center gap-1">
+                                            <i class="fa-regular fa-copy"></i> <span>Salin</span>
+                                        </button>
+                                    </div>
+                                    <p id="motionPromptText" class="text-xs text-gray-300 font-mono leading-relaxed bg-darker/70 p-2.5 rounded-lg border border-white/5 select-all">Buatkan 1 file preset HTML Canvas 1920x1080 background green screen #00FF00 dengan animasi [sebutkan ide animasinya], durasi loop 10 detik.</p>
+                                </div>
+                                <a href="https://docs.google.com/document/d/1zoDkL6q2Ii6kXeEuNKxECgr9TOHwEW6mLsiuKlyiJ1g/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center gap-1.5 transition-colors">
+                                    <i class="fa-solid fa-file-lines"></i> Buka File Prompt (Google Docs) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </a>
+                            </div>
+
+                            <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+                                <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-circle-check text-green-500 mr-1"></i> Sistem Ready</span>
+                                <a href="#" class="bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -135,7 +173,7 @@
         </footer>
     </div>
 
-    <!-- LOGIKA LOGIN ASLI (TERKONEKSI KE SERVER NETLIFY) -->
+    <!-- LOGIKA LOGIN ASLI (TERKONEKSI KE SERVER NETLIFY) & COPY PROMPT -->
     <script>
         const loginScreen = document.getElementById('loginScreen');
         const mainDashboard = document.getElementById('mainDashboard');
@@ -186,7 +224,6 @@
                 let response, data;
 
                 if (inviteToken) {
-                    // API Asli Netlify untuk Aktivasi Password Baru
                     response = await fetch('/.netlify/identity/verify', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
@@ -197,7 +234,6 @@
                         })
                     });
                 } else {
-                    // API Asli Netlify untuk Mengecek Akun
                     const emailVal = emailInput.value;
                     if(!emailVal) throw new Error("Email wajib diisi!");
                     
@@ -214,13 +250,11 @@
 
                 data = await response.json();
                 
-                // JIKA SERVER MENOLAK, BLOKIR AKSES DAN MUNCULKAN ERROR
                 if (!response.ok) {
                     if (inviteToken) throw new Error("Link undangan sudah kadaluarsa.");
                     throw new Error("Email tidak terdaftar atau password salah!");
                 }
 
-                // HANYA JIKA BERHASIL:
                 const userEmail = (data.user && data.user.email) || emailInput.value || 'Kreator';
                 localStorage.setItem('vectoria_token', data.access_token);
                 localStorage.setItem('vectoria_email', userEmail);
@@ -237,7 +271,6 @@
                 }, 500);
 
             } catch (error) {
-                // Tampilkan pesan gagal dan batalkan perpindahan halaman
                 errorMsg.innerText = error.message;
                 errorMsg.classList.remove('hidden');
             } finally {
@@ -252,6 +285,20 @@
             localStorage.removeItem('vectoria_email');
             location.reload(); 
         });
+
+        // Tombol Salin Prompt Motion Studio Maker
+        const copyPromptBtn = document.getElementById('copyPromptBtn');
+        const motionPromptText = document.getElementById('motionPromptText');
+        if (copyPromptBtn && motionPromptText) {
+            copyPromptBtn.addEventListener('click', () => {
+                navigator.clipboard.writeText(motionPromptText.innerText).then(() => {
+                    copyPromptBtn.innerHTML = '<i class="fa-solid fa-check text-emerald-400"></i> <span class="text-emerald-400">Tersalin!</span>';
+                    setTimeout(() => {
+                        copyPromptBtn.innerHTML = '<i class="fa-regular fa-copy"></i> <span>Salin</span>';
+                    }, 2000);
+                });
+            });
+        }
     </script>
 </body>
 </html>

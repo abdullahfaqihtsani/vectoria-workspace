@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vector Studio Maker - Ekosistem AI Microstocker</title>
+    <title>Vectoria - Ekosistem AI Microstocker</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -23,10 +23,10 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0B0F19; color: #F8FAFC; }
         .glass-header { background: rgba(11, 15, 25, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
         .tool-card { background: linear-gradient(145deg, #151A27 0%, #0F131D 100%); border: 1px solid rgba(255,255,255,0.06); transition: all 0.3s ease; }
-        .tool-card:hover { border-color: rgba(59, 130, 246, 0.4); transform: translateY(-4px); box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2); }
+        .tool-card:hover { border-color: rgba(139, 92, 246, 0.45); transform: translateY(-4px); box-shadow: 0 12px 32px -10px rgba(139, 92, 246, 0.25); }
         .feature-card { background: rgba(21, 26, 39, 0.6); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
         .feature-card:hover { background: rgba(21, 26, 39, 0.95); border-color: rgba(139, 92, 246, 0.35); transform: translateY(-3px); }
-        .gradient-text { background: linear-gradient(to right, #60A5FA, #A78BFA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text { background: linear-gradient(to right, #60A5FA, #A78BFA, #E879F9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body class="relative min-h-screen overflow-x-hidden selection:bg-primary selection:text-white flex flex-col">
@@ -38,7 +38,7 @@
             <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-accent/20 blur-3xl rounded-full"></div>
             
             <div class="relative z-10 text-left">
-                <div class="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
+                <div class="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/20">
                     <i class="fa-solid fa-pen-nib text-4xl text-white"></i>
                 </div>
                 
@@ -71,12 +71,14 @@
             <div class="max-w-7xl mx-auto flex items-center justify-between">
                 <div class="flex items-center gap-3">
                     <div class="text-primary text-2xl"><i class="fa-solid fa-pen-nib"></i></div>
-                    <span class="text-xl font-bold tracking-tight">Vector Studio Maker<span class="text-primary">Tools</span></span>
+                    <span class="text-xl font-bold tracking-tight">Vectoria<span class="text-primary">Tools</span></span>
                 </div>
-                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <div class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-300">
                     <a href="#tools" class="hover:text-white transition-colors">Workspace</a>
-                    <a href="#keunggulan" class="hover:text-white transition-colors">Kenapa VectorStudio</a>
+                    <a href="#keunggulan" class="hover:text-white transition-colors">Keunggulan</a>
+                    <a href="#perbandingan" class="hover:text-white transition-colors">Perbandingan</a>
                     <a href="#alur" class="hover:text-white transition-colors">Alur Kerja</a>
+                    <a href="#tips" class="hover:text-white transition-colors">Tips & FAQ</a>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="hidden sm:block text-right text-sm">
@@ -92,60 +94,88 @@
         <main class="w-full flex-grow">
             <!-- Hero Section + Quick Stats -->
             <section class="relative pt-16 sm:pt-24 pb-16 px-6 max-w-7xl mx-auto">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[420px] bg-primary/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[420px] bg-accent/20 blur-[130px] rounded-full pointer-events-none z-0"></div>
                 <div class="max-w-4xl mx-auto text-center relative z-10">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Sistem Vector, Metadata & Motion Aktif
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> 4 Ekosistem Aktif: Vector, Metadata, Motion & CalendarTrend
                     </div>
                     <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                         Ekosistem AI Terbaik untuk <br class="hidden md:block"/> 
                         <span class="gradient-text">Microstocker Indonesia</span>
                     </h1>
                     <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-                        Satu workspace terpadu untuk mempercepat produksi aset vector, animasi motion green screen, dan optimasi metadata SEO agar portofolio Anda lebih cepat lolos kurasi dan laku di agensi global.
+                        Satu workspace terpadu dari riset tren musiman, produksi aset vector & motion green screen, hingga optimasi metadata SEO—membantu portofolio Anda lebih cepat lolos kurasi dan laku di agensi global.
                     </p>
 
                     <!-- Quick Impact Metrics -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                         <div class="bg-card/70 border border-white/5 rounded-2xl p-5 backdrop-blur-sm">
-                            <div class="text-2xl md:text-3xl font-extrabold text-blue-400 mb-1">10x</div>
+                            <div class="text-2xl md:text-3xl font-extrabold text-blue-400 mb-1">4-in-1</div>
+                            <div class="text-xs text-gray-400 font-medium">Riset, Vector, Motion & SEO</div>
+                        </div>
+                        <div class="bg-card/70 border border-white/5 rounded-2xl p-5 backdrop-blur-sm">
+                            <div class="text-2xl md:text-3xl font-extrabold text-purple-400 mb-1">10x</div>
                             <div class="text-xs text-gray-400 font-medium">Produksi Aset Lebih Cepat</div>
                         </div>
                         <div class="bg-card/70 border border-white/5 rounded-2xl p-5 backdrop-blur-sm">
-                            <div class="text-2xl md:text-3xl font-extrabold text-purple-400 mb-1">3-in-1</div>
-                            <div class="text-xs text-gray-400 font-medium">Vector, SEO & Motion</div>
+                            <div class="text-2xl md:text-3xl font-extrabold text-fuchsia-400 mb-1">2026–2030</div>
+                            <div class="text-xs text-gray-400 font-medium">Proyeksi Tren Multi-Tahun</div>
                         </div>
                         <div class="bg-card/70 border border-white/5 rounded-2xl p-5 backdrop-blur-sm">
-                            <div class="text-2xl md:text-3xl font-extrabold text-emerald-400 mb-1">Global</div>
-                            <div class="text-xs text-gray-400 font-medium">Standar Adobe, SS & Freepik</div>
-                        </div>
-                        <div class="bg-card/70 border border-white/5 rounded-2xl p-5 backdrop-blur-sm">
-                            <div class="text-2xl md:text-3xl font-extrabold text-cyan-400 mb-1">100%</div>
+                            <div class="text-2xl md:text-3xl font-extrabold text-emerald-400 mb-1">100%</div>
                             <div class="text-xs text-gray-400 font-medium">Cloud & Tanpa Install Berat</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Tools Section (3 Pilihan Tools) -->
+            <!-- SPOTLIGHT BANNER: STRATEGI GOLDEN UPLOAD -->
+            <section class="px-6 pb-12 max-w-6xl mx-auto">
+                <div class="bg-gradient-to-r from-purple-900/40 via-card to-blue-900/40 border border-purple-500/25 rounded-2xl p-6 md:p-7 flex flex-col md:flex-row items-start md:items-center justify-between gap-5 shadow-lg shadow-purple-900/10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <div>
+                            <div class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-fuchsia-300 mb-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-fuchsia-400"></span> Strategi Kontributor Pro
+                            </div>
+                            <h3 class="text-lg font-bold text-white">Manfaatkan Jendela "Golden Upload" H-60 s/d H-90</h3>
+                            <p class="text-sm text-gray-300 mt-1 leading-relaxed">
+                                Pembeli global mencari aset musiman (Imlek, Ramadan, Liburan, Harbolnas) 2–3 bulan sebelum hari-H. Cek jadwal prioritas terbaru di <strong>CalendarTrend</strong> sebelum mulai mendesain hari ini.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#tools" class="shrink-0 bg-gradient-to-r from-purple-500 to-fuchsia-500 hover:from-purple-600 hover:to-fuchsia-600 text-white text-xs font-bold px-5 py-3 rounded-xl transition-all shadow-lg shadow-purple-500/20 flex items-center gap-2">
+                        Cek Alat Sekarang <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tools Section (4 Pilihan Tools - Grid 2x2) -->
             <section id="tools" class="py-16 px-6 bg-darker/50 border-t border-white/5 relative">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-12">
                         <span class="text-xs font-bold uppercase tracking-widest text-primary">Workspace Utama</span>
                         <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-3">Pilih Alat Produksi Anda</h2>
-                        <p class="text-gray-400 max-w-xl mx-auto text-sm">Semua alat yang dibutuhkan kreator microstock modern dalam satu layar.</p>
+                        <p class="text-gray-400 max-w-xl mx-auto text-sm">Empat alat utama yang saling terhubung untuk mempercepat alur kerja microstock harian Anda.</p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         
-                        <!-- TOOL 1: Vector Studio Maker -->
+                        <!-- TOOL 1: Vectoria Vector Maker -->
                         <div class="tool-card rounded-2xl p-8 relative flex flex-col h-full group">
                             <div class="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">PRO</div>
                             <div class="w-16 h-16 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                                 <i class="fa-solid fa-pen-nib"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Vector Maker</h3>
-                            <p class="text-gray-400 text-sm mb-8 flex-grow leading-relaxed">Ubah ide dan prompt jadi aset vector rapi siap upload sesuai standar kualitas agensi global.</p>
+                            <h3 class="text-2xl font-bold text-white mb-3">Vectoria Vector Maker</h3>
+                            <p class="text-gray-400 text-sm mb-5 leading-relaxed">Ubah ide dan prompt jadi aset vector rapi siap upload sesuai standar kualitas agensi global.</p>
+                            <ul class="space-y-2 text-xs text-gray-300 mb-8 flex-grow">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Ekspor format SVG vektor asli & unduh batch ZIP</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> AI Prompt Enhancer & pilihan rasio aspek native</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Riwayat prompt interaktif & hemat memori browser</li>
+                            </ul>
                             <div class="pt-5 border-t border-white/5 flex items-center justify-between">
                                 <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-circle-check text-green-500 mr-1"></i> Sistem Ready</span>
                                 <a href="#" class="bg-primary/10 text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
@@ -159,7 +189,12 @@
                                 <i class="fa-solid fa-tags"></i>
                             </div>
                             <h3 class="text-2xl font-bold text-white mb-3">Metadata Optimization</h3>
-                            <p class="text-gray-400 text-sm mb-8 flex-grow leading-relaxed">Otomatisasi pembuatan Title, Description, dan keyword komersial bervolume tinggi agar mudah ditemukan pembeli.</p>
+                            <p class="text-gray-400 text-sm mb-5 leading-relaxed">Otomatisasi pembuatan Title, Description, dan keyword komersial bervolume tinggi agar mudah ditemukan pembeli.</p>
+                            <ul class="space-y-2 text-xs text-gray-300 mb-8 flex-grow">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Pemetaan otomatis kategori Adobe Stock & Shutterstock</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Deteksi Risiko IP & fitur Bulk Edit massal</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Ekspor CSV siap upload & kompresi gambar otomatis</li>
+                            </ul>
                             <div class="pt-5 border-t border-white/5 flex items-center justify-between">
                                 <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-circle-check text-green-500 mr-1"></i> Sistem Ready</span>
                                 <a href="#" class="bg-purple-500/10 text-purple-400 hover:bg-purple-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
@@ -173,7 +208,7 @@
                                 <i class="fa-solid fa-film"></i>
                             </div>
                             <h3 class="text-2xl font-bold text-white mb-3">Motion Studio Maker</h3>
-                            <p class="text-gray-400 text-sm mb-5 leading-relaxed">Buat aset animasi motion green screen HTML Canvas 1920x1080 loop 10 detik siap pakai.</p>
+                            <p class="text-gray-400 text-sm mb-5 leading-relaxed">Buat aset animasi motion green screen HTML Canvas 1920x1080 loop 10 detik siap pakai untuk kategori footage.</p>
                             
                             <!-- Kotak Prompt Preset HTML + Link File -->
                             <div class="bg-dark/80 border border-white/10 rounded-xl p-3.5 mb-6 flex-grow flex flex-col justify-between">
@@ -199,23 +234,41 @@
                             </div>
                         </div>
 
+                        <!-- TOOL 4: CalendarTrend -->
+                        <div class="tool-card rounded-2xl p-8 relative flex flex-col h-full group">
+                            <div class="absolute top-4 right-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">TREND</div>
+                            <div class="w-16 h-16 rounded-2xl bg-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">CalendarTrend</h3>
+                            <p class="text-gray-400 text-sm mb-5 leading-relaxed">Radar jadwal tren microstock multi-tahun (2026–2030) agar Anda tidak pernah telat upload event musiman.</p>
+                            <ul class="space-y-2 text-xs text-gray-300 mb-8 flex-grow">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-fuchsia-400"></i> Deteksi otomatis jendela <strong>Upload Emas H-60/H-90</strong> lintas tahun</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-fuchsia-400"></i> Kalender hari raya dinamis (Imlek/Shio, Ramadan, HUT RI, Harbolnas)</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-fuchsia-400"></i> Paket SEO 20+ keyword, palet warna Hex & Production Planner (CSV/ICS)</li>
+                            </ul>
+                            <div class="pt-5 border-t border-white/5 flex items-center justify-between">
+                                <span class="text-xs text-gray-500 font-medium"><i class="fa-solid fa-circle-check text-green-500 mr-1"></i> Sistem Ready</span>
+                                <a href="#" class="bg-fuchsia-500/10 text-fuchsia-400 hover:bg-fuchsia-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2">Buka Alat <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION BARU: KENAPA HARUS VECTOR STUDIO MAKER? -->
+            <!-- SECTION: KENAPA HARUS VECTORIA? -->
             <section id="keunggulan" class="py-20 px-6 border-t border-white/5 relative">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-14">
                         <span class="text-xs font-bold uppercase tracking-widest text-accent">Keunggulan Ekosistem</span>
                         <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Kenapa Harus Menggunakan <span class="gradient-text">Vectoria?</span></h2>
                         <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-                            Dirancang khusus menjawab hambatan utama kontributor microstock—dari ide buntu, proses tracing lama, hingga aset ditolak karena metadata kurang relevan.
+                            Dirancang khusus menjawab hambatan utama kontributor microstock—dari bingung menentukan tema laku, proses produksi lama, hingga aset ditolak karena metadata atau pelanggaran IP.
                         </p>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Keunggulan 1 -->
                         <div class="feature-card rounded-2xl p-6">
                             <div class="w-12 h-12 rounded-xl bg-blue-500/15 text-blue-400 flex items-center justify-center text-xl mb-4">
                                 <i class="fa-solid fa-bolt"></i>
@@ -226,99 +279,148 @@
                             </p>
                         </div>
 
-                        <!-- Keunggulan 2 -->
+                        <div class="feature-card rounded-2xl p-6">
+                            <div class="w-12 h-12 rounded-xl bg-fuchsia-500/15 text-fuchsia-400 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Selalu Tepat Waktu di Tren Pasar</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Dengan CalendarTrend, Anda tidak lagi menebak-nebak tema. Upload tepat di jendela H-60/H-90 saat permintaan pembeli mulai melonjak.
+                            </p>
+                        </div>
+
                         <div class="feature-card rounded-2xl p-6">
                             <div class="w-12 h-12 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center text-xl mb-4">
                                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-2">SEO & Keyword Komersial</h3>
+                            <h3 class="text-lg font-bold text-white mb-2">SEO & Filter Risiko IP</h3>
                             <p class="text-gray-400 text-sm leading-relaxed">
-                                Judul, deskripsi, dan tag disusun menargetkan kata kunci yang benar-benar dicari pembeli global di Adobe Stock, Shutterstock, dan Freepik.
+                                Judul, deskripsi, kategori resmi, dan keyword komersial disusun otomatis sekaligus mendeteksi potensi risiko hak cipta (IP) sebelum upload.
                             </p>
                         </div>
 
-                        <!-- Keunggulan 3 -->
                         <div class="feature-card rounded-2xl p-6">
                             <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-xl mb-4">
                                 <i class="fa-solid fa-layer-group"></i>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-2">Multiformat dalam Satu Atap</h3>
+                            <h3 class="text-lg font-bold text-white mb-2">Multiformat: Vector & Motion</h3>
                             <p class="text-gray-400 text-sm leading-relaxed">
-                                Tidak hanya vector statis, Anda bisa memperluas sumber penghasilan ke kategori footage/motion green screen yang nilai royaltinya lebih tinggi.
+                                Tidak hanya vector statis, perluas sumber penghasilan Anda ke kategori footage/motion green screen 1080p yang nilai royaltinya lebih tinggi.
                             </p>
                         </div>
 
-                        <!-- Keunggulan 4 -->
-                        <div class="feature-card rounded-2xl p-6">
-                            <div class="w-12 h-12 rounded-xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center text-xl mb-4">
-                                <i class="fa-solid fa-award"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-white mb-2">Standar Kurasi Agensi</h3>
-                            <p class="text-gray-400 text-sm leading-relaxed">
-                                Output dirancang rapi dan bersih untuk meminimalkan risiko penolakan (*rejection*) teknis dari tim reviewer agensi microstock.
-                            </p>
-                        </div>
-
-                        <!-- Keunggulan 5 -->
                         <div class="feature-card rounded-2xl p-6">
                             <div class="w-12 h-12 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl mb-4">
                                 <i class="fa-solid fa-laptop-code"></i>
                             </div>
                             <h3 class="text-lg font-bold text-white mb-2">Ringan Tanpa PC Spek Tinggi</h3>
                             <p class="text-gray-400 text-sm leading-relaxed">
-                                Seluruh alat berjalan langsung di browser. Anda tidak perlu khawatir laptop lemot saat merender aset atau mengelola ratusan metadata.
+                                Seluruh ekosistem berjalan langsung di browser. Anda tidak perlu software berat atau laptop mahal untuk merender aset dan mengelola ratusan CSV.
                             </p>
                         </div>
 
-                        <!-- Keunggulan 6 -->
                         <div class="feature-card rounded-2xl p-6">
-                            <div class="w-12 h-12 rounded-xl bg-rose-500/15 text-rose-400 flex items-center justify-center text-xl mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center text-xl mb-4">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-2">Akses Eksklusif & Terupdate</h3>
+                            <h3 class="text-lg font-bold text-white mb-2">Akses Privat & Terupdate</h3>
                             <p class="text-gray-400 text-sm leading-relaxed">
-                                Akun privat khusus kreator terdaftar dengan pembaruan fitur dan preset prompt berkala mengikuti tren pasar desain terbaru.
+                                Akun eksklusif khusus member terdaftar dengan pembaruan fitur, database tren hingga 2030, serta preset prompt berkala.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION BARU: ALUR KERJA CEPAT -->
-            <section id="alur" class="py-20 px-6 bg-darker/60 border-t border-white/5 relative">
+            <!-- SECTION BARU: PERBANDINGAN CARA MANUAL VS VECTORIA -->
+            <section id="perbandingan" class="py-20 px-6 bg-darker/40 border-t border-white/5 relative">
                 <div class="max-w-5xl mx-auto">
-                    <div class="text-center mb-14">
-                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Workflow Praktis</span>
-                        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-3">Dari Ide ke Royalti dalam 3 Langkah</h2>
-                        <p class="text-gray-400 text-sm max-w-xl mx-auto">Alur kerja terstruktur agar Anda bisa konsisten upload portofolio setiap hari.</p>
+                    <div class="text-center mb-12">
+                        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">Efisiensi Nyata</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-3">Cara Lama vs. Ekosistem Vectoria</h2>
+                        <p class="text-gray-400 text-sm max-w-xl mx-auto">Lihat seberapa besar waktu dan tenaga yang bisa Anda hemat setiap minggu.</p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-card/80 border border-white/5 rounded-2xl p-7 relative">
-                            <div class="text-4xl font-extrabold text-white/10 absolute top-5 right-6">01</div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Cara Manual -->
+                        <div class="bg-card/50 border border-red-500/15 rounded-2xl p-7">
+                            <div class="flex items-center gap-3 mb-5">
+                                <div class="w-10 h-10 rounded-xl bg-red-500/15 text-red-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-200">Cara Manual Konvensional</h3>
+                            </div>
+                            <ul class="space-y-3.5 text-sm text-gray-400">
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark text-red-400/80 mt-1"></i> Sering telat upload event besar karena tidak punya jadwal riset H-60.</li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark text-red-400/80 mt-1"></i> Butuh berjam-jam tracing vector & membuat animasi dari nol.</li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark text-red-400/80 mt-1"></i> Pusing mengetik 30–50 keyword bahasa Inggris satu per satu.</li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-xmark text-red-400/80 mt-1"></i> Rawan ditolak reviewer karena salah kategori atau keyword melanggar IP.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Dengan Vectoria -->
+                        <div class="bg-gradient-to-br from-blue-950/50 via-card to-purple-950/50 border border-purple-500/30 rounded-2xl p-7 shadow-xl shadow-purple-900/10">
+                            <div class="flex items-center gap-3 mb-5">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-white">Dengan Vectoria Workspace</h3>
+                            </div>
+                            <ul class="space-y-3.5 text-sm text-gray-200">
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> <strong>CalendarTrend</strong> otomatis memberi tahu tema "Upload Emas" hari ini hingga 2030.</li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> Generate aset SVG Vector & Motion Green Screen dalam hitungan menit.</li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> Title, deskripsi, kategori Adobe/SS, dan CSV massal jadi dalam 1 klik.</li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i> Dilengkapi deteksi Risiko IP & standar kurasi untuk menekan tingkat <em>rejection</em>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: ALUR KERJA 4 LANGKAH -->
+            <section id="alur" class="py-20 px-6 border-t border-white/5 relative">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-14">
+                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Workflow End-to-End</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-3">Dari Riset ke Royalti dalam 4 Langkah</h2>
+                        <p class="text-gray-400 text-sm max-w-xl mx-auto">Gunakan keempat alat secara berurutan agar Anda bisa konsisten upload portofolio berkualitas setiap hari.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-card/80 border border-white/5 rounded-2xl p-6 relative">
+                            <div class="text-4xl font-extrabold text-white/10 absolute top-4 right-5">01</div>
+                            <div class="w-10 h-10 rounded-lg bg-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center font-bold mb-4">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <h3 class="text-base font-bold text-white mb-2">Riset Tren H-60</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Buka <strong>CalendarTrend</strong>, pilih event prioritas, ambil palet warna & simpan ke Production Planner.</p>
+                        </div>
+
+                        <div class="bg-card/80 border border-white/5 rounded-2xl p-6 relative">
+                            <div class="text-4xl font-extrabold text-white/10 absolute top-4 right-5">02</div>
                             <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold mb-4">
                                 <i class="fa-solid fa-wand-magic-sparkles"></i>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-2">Generate Aset</h3>
-                            <p class="text-gray-400 text-sm leading-relaxed">Buat ilustrasi menggunakan <strong>Vector Maker</strong> atau animasi 1080p green screen via <strong>Motion Studio Maker</strong>.</p>
+                            <h3 class="text-base font-bold text-white mb-2">Produksi Aset</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Eksekusi desain via <strong>Vector Maker</strong> (SVG) atau animasi loop 1080p di <strong>Motion Studio Maker</strong>.</p>
                         </div>
 
-                        <div class="bg-card/80 border border-white/5 rounded-2xl p-7 relative">
-                            <div class="text-4xl font-extrabold text-white/10 absolute top-5 right-6">02</div>
+                        <div class="bg-card/80 border border-white/5 rounded-2xl p-6 relative">
+                            <div class="text-4xl font-extrabold text-white/10 absolute top-4 right-5">03</div>
                             <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold mb-4">
                                 <i class="fa-solid fa-sliders"></i>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-2">Optimasi Metadata</h3>
-                            <p class="text-gray-400 text-sm leading-relaxed">Hasilkan Title, Description, dan hingga 50 keyword komersial relevan secara otomatis di <strong>Metadata Optimization</strong>.</p>
+                            <h3 class="text-base font-bold text-white mb-2">Optimasi SEO & CSV</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Proses batch di <strong>Metadata Optimization</strong> untuk judul, kategori resmi, cek IP, dan ekspor CSV.</p>
                         </div>
 
-                        <div class="bg-card/80 border border-white/5 rounded-2xl p-7 relative">
-                            <div class="text-4xl font-extrabold text-white/10 absolute top-5 right-6">03</div>
+                        <div class="bg-card/80 border border-white/5 rounded-2xl p-6 relative">
+                            <div class="text-4xl font-extrabold text-white/10 absolute top-4 right-5">04</div>
                             <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold mb-4">
                                 <i class="fa-solid fa-cloud-arrow-up"></i>
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-2">Upload & Monetasikan</h3>
-                            <p class="text-gray-400 text-sm leading-relaxed">Unggah aset beserta metadatanya ke Shutterstock, Adobe Stock, Freepik, atau Vecteezy dan bangun aset pasif Anda.</p>
+                            <h3 class="text-base font-bold text-white mb-2">Upload & Monetasikan</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Unggah ke Adobe Stock, Shutterstock, Freepik, atau Pond5 dan bangun pendapatan pasif jangka panjang.</p>
                         </div>
                     </div>
 
@@ -330,8 +432,50 @@
                             <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-purple-400"></i> Shutterstock</span>
                             <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-emerald-400"></i> Freepik</span>
                             <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-cyan-400"></i> Vecteezy</span>
-                            <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-amber-400"></i> Pond5 / Videohive</span>
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-fuchsia-400"></i> Pond5 / Videohive</span>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION BARU: TIPS & FAQ SINGKAT -->
+            <section id="tips" class="py-16 px-6 bg-darker/60 border-t border-white/5">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-10">
+                        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Panduan Cepat</span>
+                        <h2 class="text-2xl md:text-3xl font-bold mt-2">Tips Maksimalkan Vectoria Workspace</h2>
+                    </div>
+
+                    <div class="space-y-3">
+                        <details class="group bg-card/70 border border-white/5 rounded-xl p-5 open:border-purple-500/30 transition-all" open>
+                            <summary class="flex items-center justify-between cursor-pointer font-semibold text-white text-sm md:text-base list-none">
+                                <span><i class="fa-solid fa-lightbulb text-amber-400 mr-2"></i> Kapan waktu terbaik upload aset musiman?</span>
+                                <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform text-xs"></i>
+                            </summary>
+                            <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                                Idealnya <strong>60 hingga 90 hari sebelum tanggal event</strong>. Agensi butuh waktu kurasi dan pembeli desain biasanya menyiapkan materi promosi jauh sebelum hari-H. Gunakan filter <em>Upload Emas Kini</em> di <strong>CalendarTrend</strong> untuk melihat target terdekat.
+                            </p>
+                        </details>
+
+                        <details class="group bg-card/70 border border-white/5 rounded-xl p-5 open:border-purple-500/30 transition-all">
+                            <summary class="flex items-center justify-between cursor-pointer font-semibold text-white text-sm md:text-base list-none">
+                                <span><i class="fa-solid fa-film text-emerald-400 mr-2"></i> Bagaimana cara pakai prompt Motion Studio Maker?</span>
+                                <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform text-xs"></i>
+                            </summary>
+                            <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                                Klik tombol <strong>Salin</strong> pada kartu Motion Studio Maker, ganti bagian <code>[sebutkan ide animasinya]</code> sesuai tema dari CalendarTrend (misalnya: <em>partikel lentera emas melayang</em>), atau buka file Google Docs untuk koleksi preset siap pakai.
+                            </p>
+                        </details>
+
+                        <details class="group bg-card/70 border border-white/5 rounded-xl p-5 open:border-purple-500/30 transition-all">
+                            <summary class="flex items-center justify-between cursor-pointer font-semibold text-white text-sm md:text-base list-none">
+                                <span><i class="fa-solid fa-shield-check text-blue-400 mr-2"></i> Agar aset jarang ditolak (rejected), apa yang perlu dicek?</span>
+                                <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform text-xs"></i>
+                            </summary>
+                            <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                                Pastikan tidak ada merek dagang, logo terkenal, atau karakter berhak cipta pada ilustrasi maupun keyword. Aktifkan filter <strong>Risiko IP</strong> di <strong>Metadata Optimization</strong> sebelum mengekspor CSV agar aset bermasalah otomatis tersaring.
+                            </p>
+                        </details>
                     </div>
                 </div>
             </section>
